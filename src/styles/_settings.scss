@@ -1,0 +1,71 @@
+// Light reset
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Font import 
+
+@font-face {
+  font-family: "main-font";
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+}
+
+
+// Global style
+
+$main-font: "main-font", sans-serif;
+$main-color: #036db3;
+$second-color:#424850;
+;
+;
+
+// Mixins
+
+@mixin flex-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-evenly{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin flex-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// General 
+body{
+  font-family: $main-font;
+  color: $second-color;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:visited{
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover{
+    color: white;
+  }
+}

@@ -1,0 +1,48 @@
+.navigation{
+  width: 100%;
+  background: $main-color;
+  height: 100px;
+  margin-bottom: 50px;
+
+  @include flex-center;
+
+  ul{
+    @include flex-evenly;
+    width: 100%;
+
+    text-transform: uppercase;
+  }
+}
+
+a.nav-active{
+  color: white;
+  position: relative;
+
+  &::after{
+    content: "";
+    background: white;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX((-50%));
+    animation: navanim 0.4s ease forwards;
+    -webkit-animation: navanim 0.4s ease forwards;
+  }
+}
+
+@keyframes navanim {
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes navanim {
+  to {
+    width: 100%;
+  }
+}
+
+

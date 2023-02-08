@@ -1,0 +1,11 @@
+.header{
+  width: 100%;
+  @include flex-column-center;
+  background: $main-color;
+  text-transform: uppercase;
+  color: white;
+
+  img{
+    height: 100px;
+  }
+}
