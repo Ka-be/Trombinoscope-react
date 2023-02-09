@@ -1,6 +1,8 @@
 import React from "react";
 
 const Card = ({ volunteer }) => {
+
+
 	return (
 		<li className="card">
 			<img src={volunteer.avatar} alt={"Photo de " + volunteer.name} />
@@ -11,5 +13,9 @@ const Card = ({ volunteer }) => {
 		</li>
 	);
 };
+
+
+
+
 
 export default Card;

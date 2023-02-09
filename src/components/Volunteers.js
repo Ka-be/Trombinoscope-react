@@ -12,7 +12,6 @@ const Volunteers = () => {
 
 	return (
 		<div className="volunteers">
-			<h1>Les bénévoles</h1>
 			<ul className="volunteers-cards">
 				{data.map((volunteer) => (
 					<Card key={volunteer.id} volunteer={volunteer} />

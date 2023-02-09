@@ -45,6 +45,13 @@ $second-color:#424850;
   align-items: center;
 }
 
+@mixin flex-column-evenly{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 
 // General 

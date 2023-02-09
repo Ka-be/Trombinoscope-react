@@ -102,15 +102,25 @@ a.nav-active::after {
 }
 
 .volunteers-cards li {
-  background: rgb(192, 192, 192);
-  margin: 5px;
-  height: 200px;
-  width: 200px;
+  background: rgb(238, 238, 238);
+  margin: 8px;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
   border-radius: 10px;
+  transition: ease 0.4s all;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.volunteers-cards li:hover {
+  transform: scale(1.1);
+  background: #036db3;
+  transition: ease 0.4s all;
+}
+.volunteers-cards li:hover .infos {
+  opacity: 1;
 }
 .volunteers-cards li img {
   height: 100px;
@@ -124,7 +134,8 @@ a.nav-active::after {
   left: 0;
   width: 100%;
   height: 100%;
-}
-.volunteers-cards li .infos:hover {
-  opacity: 1;
+  font-size: 0.6em;
+  text-align: center;
+  margin-top: 5px;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
