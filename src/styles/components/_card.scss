@@ -1,5 +1,6 @@
 .volunteers{
   @include flex-column-center;
+  margin-top: 20px;
 
   .volunteers-cards{
     width: 100%;
@@ -11,22 +12,27 @@
 }
 
 .volunteers-cards li{
-  background: rgb(238, 238, 238);
+  // background: rgba(238, 238, 238, 0.471);
   margin: 8px;
-  padding: 5px;
+  padding: 15px;
   height: 150px;
   width: 150px;
-  border-radius: 10px;
-  transition: ease 0.4s all;
+  border-radius: 20px;
+  transition: ease 1.2s all;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  cursor: pointer;
   @include flex-column-evenly;
 
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.12);
     background: $main-color;
-    transition: ease 0.4s all;
+    transition: ease .4s all;
 
     .infos{
       opacity: 1;
+      transition: ease .4s all;
+      color: white;
+
     }
   }
 
@@ -37,7 +43,8 @@
   }
 
   .infos{
-    opacity: 0;
+    opacity: 0.3;
+    transition: ease 1.2s all;
     position: relative;
     top: 0;
     left: 0;
@@ -46,6 +53,6 @@
     font-size: 0.6em;
     text-align: center;
     margin-top: 5px;
-    color: white;
+    color: rgba(0, 0, 0, 0.8);
   }
 }

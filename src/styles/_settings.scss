@@ -1,80 +1,98 @@
 // Light reset
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-// Font import 
+// Font import
 
-@font-face {
-  font-family: "main-font";
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
 
 // Global style
 
-$main-font: "main-font", sans-serif;
+$main-font: "Roboto Condensed", sans-serif;
 $main-color: #036db3;
-$second-color:#424850;
-;
-;
-
+$second-color: #424850;
 // Mixins
 
-@mixin flex-center{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+@mixin flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-@mixin flex-evenly{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+@mixin flex-evenly {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-@mixin flex-column-center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@mixin flex-column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-@mixin flex-column-evenly{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+@mixin flex-column-evenly {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+// General
+body {
+	font-family: $main-font;
+	color: $second-color;
+	height: 100vh;
+	width: 100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+
+	&:visited {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:hover {
+		color: white;
+	}
+}
+
+.hero{
+  @include flex-center;
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $main-color;
 }
 
 
-
-// General 
-body{
-  font-family: $main-font;
-  color: $second-color;
-  height: 100vh;
-  width: 100%;
-}
-
-li{
-  list-style-type: none;
-}
-
-a{
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-
-  &:visited{
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &:hover{
-    color: white;
+@media screen and (max-width: 600px){
+  .hero{
+    @include flex-column-center;
   }
 }

@@ -1,15 +1,13 @@
 .navigation{
   width: 100%;
   background: $main-color;
-  height: 50px;
-  margin-bottom: 50px;
+  height: 80px;
 
   @include flex-center;
 
   ul{
     @include flex-evenly;
     width: 100%;
-
     text-transform: uppercase;
   }
 }

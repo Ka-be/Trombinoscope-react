@@ -6,8 +6,10 @@ import Volunteers from '../components/Volunteers';
 const Home = () => {
   return (
     <div>
-      <Header />
-      <Navigation />
+      <div className="hero">
+        <Header></Header>
+        <Navigation></Navigation>
+      </div>
       <Volunteers />
     </div>
   );

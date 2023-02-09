@@ -1,8 +1,8 @@
 [{
   "id": 1,
-  "name": "Alwyn Offiler",
-  "function": "Physical Therapy Assistant",
-  "avatar": "https://robohash.org/voluptatemasoluta.jpg?size=500x500&set=set1"
+  "name": "Kevin Bourgitteau",
+  "function": "Bénévole",
+  "avatar": "./img/pic.png"
 },
 {
   "id": 2,

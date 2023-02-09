@@ -1,5 +1,6 @@
 .header{
   width: 100%;
+  height: 80px;
   @include flex-center;
   background: $main-color;
   text-transform: uppercase;
