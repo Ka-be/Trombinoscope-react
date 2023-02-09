@@ -106,13 +106,24 @@ a.nav-active::after {
   margin: 5px;
   height: 200px;
   width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .volunteers-cards li img {
   height: 100px;
   width: 100px;
+  border-radius: 50%;
 }
 .volunteers-cards li .infos {
   opacity: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .volunteers-cards li .infos:hover {
   opacity: 1;
