@@ -11,6 +11,8 @@
 body {
   font-family: "main-font", sans-serif;
   color: #424850;
+  height: 100vh;
+  width: 100%;
 }
 
 li {
@@ -73,13 +75,45 @@ a.nav-active::after {
 .header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #036db3;
   text-transform: uppercase;
+  letter-spacing: 3px;
   color: white;
 }
 .header img {
+  height: 80px;
+}
+
+.volunteers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.volunteers .volunteers-cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.volunteers-cards li {
+  background: rgb(192, 192, 192);
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+}
+.volunteers-cards li img {
   height: 100px;
+  width: 100px;
+}
+.volunteers-cards li .infos {
+  opacity: 0;
+}
+.volunteers-cards li .infos:hover {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

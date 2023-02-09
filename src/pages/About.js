@@ -5,8 +5,8 @@ import Navigation from "../components/Navigation";
 const About = () => {
 	return (
 		<div>
-      <Header></Header>
-      <Navigation></Navigation>
+      <Header />
+      <Navigation />
 			<h1>A propos</h1>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quas

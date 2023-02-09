@@ -1,11 +1,12 @@
 .header{
   width: 100%;
-  @include flex-column-center;
+  @include flex-center;
   background: $main-color;
   text-transform: uppercase;
+  letter-spacing: 3px;
   color: white;
 
   img{
-    height: 100px;
+    height: 80px;
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
+import Volunteers from '../components/Volunteers';
 
 const Home = () => {
   return (
     <div>
-      <Header></Header>
-      <Navigation></Navigation>
-      <h1>Accueil</h1>
+      <Header />
+      <Navigation />
+      <Volunteers />
     </div>
   );
 };

@@ -1,0 +1,31 @@
+.volunteers{
+  @include flex-column-center;
+
+  .volunteers-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.volunteers-cards li{
+  background: rgb(192, 192, 192);
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+
+  img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .infos{
+    opacity: 0;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
