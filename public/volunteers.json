@@ -1,20 +1,20 @@
 [{
   "id": 1,
-  "name": "Kevin Bourgitteau",
-  "function": "Bénévole",
-  "avatar": "./img/volunteers/pic.png"
+  "name": "Anthony",
+  "function": "Vie de l'antenne",
+  "avatar": "./img/volunteers/anthony.png"
 },
 {
   "id": 2,
-  "name": "Bevvy Penson",
-  "function": "Staff Scientist",
-  "avatar": "https://robohash.org/necessitatibuseaullam.jpg?size=500x500&set=set1"
+  "name": "Julie",
+  "function": "Communication",
+  "avatar": "./img/volunteers/julie.png"
 },
 {
   "id": 3,
-  "name": "Fayre Skellon",
-  "function": "Information Systems Manager",
-  "avatar": "https://robohash.org/aliquamcommodinihil.jpg?size=500x500&set=set1"
+  "name": "Kevin",
+  "function": "Bénévole",
+  "avatar": "./img/volunteers/kevin.png"
 },
 {
   "id": 4,
