@@ -1,15 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "main-font";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-}
 body {
-  font-family: "main-font", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: #424850;
   height: 100vh;
   width: 100%;
@@ -30,11 +27,40 @@ a:hover {
   color: white;
 }
 
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #036db3;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navigation {
   width: 100%;
   background: #036db3;
-  height: 50px;
-  margin-bottom: 50px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -74,6 +100,7 @@ a.nav-active::after {
 }
 .header {
   width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,7 +111,37 @@ a.nav-active::after {
   color: white;
 }
 .header img {
-  height: 80px;
+  height: 70px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  text-align: justify;
+}
+.about h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.about h3 {
+  color: #036db3;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.about a {
+  color: black;
+}
+.about a:hover {
+  color: #036db3;
+}
+.about .aboutLogo {
+  height: 200px;
 }
 
 .volunteers {
@@ -92,6 +149,7 @@ a.nav-active::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .volunteers .volunteers-cards {
   width: 100%;
@@ -102,25 +160,28 @@ a.nav-active::after {
 }
 
 .volunteers-cards li {
-  background: rgb(238, 238, 238);
   margin: 8px;
-  padding: 5px;
+  padding: 15px;
   height: 150px;
   width: 150px;
-  border-radius: 10px;
-  transition: ease 0.4s all;
+  border-radius: 20px;
+  transition: ease 1.2s all;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 .volunteers-cards li:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
   background: #036db3;
   transition: ease 0.4s all;
 }
 .volunteers-cards li:hover .infos {
   opacity: 1;
+  transition: ease 0.4s all;
+  color: white;
 }
 .volunteers-cards li img {
   height: 100px;
@@ -128,7 +189,8 @@ a.nav-active::after {
   border-radius: 50%;
 }
 .volunteers-cards li .infos {
-  opacity: 0;
+  opacity: 0.3;
+  transition: ease 1.2s all;
   position: relative;
   top: 0;
   left: 0;
@@ -137,5 +199,5 @@ a.nav-active::after {
   font-size: 0.6em;
   text-align: center;
   margin-top: 5px;
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
 }/*# sourceMappingURL=index.css.map */

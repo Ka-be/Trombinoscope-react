@@ -16,6 +16,7 @@ const About = () => {
 			<p>
 			<a href="https://surfrider.eu/" target="_blank" rel="noopener noreferrer">Surfrider.eu</a>
 			</p>
+			<img className="aboutLogo" src="./logo_blue.webp"></img>
 			<br />
 			<h3>Missions</h3>
 			<p>

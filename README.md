@@ -5,7 +5,7 @@
 
 <!-- ![Status](https://img.shields.io/badge/Status-Finished-20bf6b?style=flat-square) -->
 
-<img src="public/logo.svg" width=20%>
+<img src="public/logo_blue.webp" width=20%>
 
 Trombinoscope of the Surfrider Foundation Gironde crew.
 
