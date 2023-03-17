@@ -39,5 +39,11 @@
   "name": "Carlotta",
   "function": "Bénévole",
   "avatar": "./img/volunteers/carlotta.png"
+},
+{
+  "id": 7,
+  "name": "Ion",
+  "function": "Logistique / Trésorerie",
+  "avatar": "./img/volunteers/ion.png"
 }
 ]
