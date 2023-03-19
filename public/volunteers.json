@@ -41,9 +41,15 @@
   "avatar": "./img/volunteers/carlotta.png"
 },
 {
-  "id": 7,
+  "id": 8,
   "name": "Ion",
   "function": "Logistique / Trésorerie",
   "avatar": "./img/volunteers/ion.png"
+},
+{
+  "id": 9,
+  "name": "Maud",
+  "function": "Vie de l'antenne",
+  "avatar": "./img/volunteers/maud.png"
 }
 ]
