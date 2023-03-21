@@ -25,7 +25,7 @@
 {
   "id": 5,
   "name": "Déborah",
-  "function": "Bénévole",
+  "function": "Education & Communication",
   "avatar": "./img/volunteers/deborah.png"
 },
 {
@@ -51,5 +51,11 @@
   "name": "Maud",
   "function": "Vie de l'antenne",
   "avatar": "./img/volunteers/maud.png"
+},
+{
+  "id": 10,
+  "name": "Elodie",
+  "function": "OFR & IO",
+  "avatar": "./img/volunteers/elodie.png"
 }
 ]
