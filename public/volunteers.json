@@ -57,5 +57,11 @@
   "name": "Elodie",
   "function": "OFR & IO",
   "avatar": "./img/volunteers/elodie.png"
+},
+{
+  "id": 11,
+  "name": "Marie",
+  "function": "Bénévole",
+  "avatar": "./img/volunteers/marie.png"
 }
 ]
