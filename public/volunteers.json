@@ -87,5 +87,11 @@
   "name": "Thomas",
   "function": "Education",
   "avatar": "./img/volunteers/thomas.png"
+},
+{
+  "id": 16,
+  "name": "Océane",
+  "function": "Bénévole",
+  "avatar": "./img/volunteers/oceaneL.png"
 }
 ]
